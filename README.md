@@ -1,5 +1,3 @@
-# xSTATx_RRI
-ﮩـﮩﮩ٨ـ🫀ﮩ٨ـﮩﮩ٨ـ
 # xSTATx RRI Scoring System
 
 Welcome to the official repository for the **xSTATx Reliever Reliability Index (RRI)**. This repo powers a modern evaluation framework for MLB bullpen arms using advanced stats, real-time usage data, and fantasy value modeling.
@@ -62,6 +60,31 @@ RRI formula changes and updates across 2024–2025.
 
 ---
 
+## 🔄 Unified Toolchain: How It All Works
+
+| Tool           | Purpose                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| **Google Sheets** | Manual overrides, scouting notes, and prospect tracking               |
+| **RowZero**        | Front-end analytics for Top 5% metrics, dynamic dashboards            |
+| **Google Drive**   | Central storage for exported CSVs and data versioning                |
+| **Databricks**     | Core compute engine for scoring, cleaning, modeling                  |
+| **OpenAI**         | Player blurbs, tier analysis, fantasy insight generation             |
+| **GitHub**         | Version control, workflows, documentation, community contributions   |
+| **Python**         | All backend logic for calculation, syncing, dashboard generation     |
+| **SQL**            | Delta table creation, joins, and real-time RRI scoring in Databricks |
+
+### 🌐 Workflow Sequence
+
+1. **Manual Input** → `Google Sheets`
+2. **Auto-Pulled to GitHub** → via Apps Script or Zapier
+3. **Loaded into `data/raw/`** for GitHub tracking
+4. **Databricks Notebooks** transform and apply `calculate_rri()`
+5. **Python Scripts** enhance scoring with AI (e.g., OpenAI insights)
+6. **Dashboards** (Streamlit/RowZero) update with new RRI + icons
+7. **Finals saved in `data/processed/`** and pushed back to Sheets or WordPress
+
+---
+
 ## 🚀 Getting Started
 
 ```bash
@@ -84,6 +107,20 @@ $ streamlit run dashboards/streamlit_app.py
 
 ---
 
+## 🧩 WordPress + Hostinger Deployment
+
+If you're hosting your RRI leaderboard or dashboards on a **WordPress.org** site via **Hostinger**, follow this setup:
+
+1. **Upload HTML Leaderboards** to your WordPress `uploads` or use a plugin like "Insert HTML Snippet".
+2. **Use `<iframe>` embeds** to load `rri_leaderboard.html` directly onto blog pages or landing sections.
+3. **Deploy Streamlit to a public web app** (or use local hosting via ngrok) and link in WP.
+4. **Sync leaderboard data** via Google Sheets live embed or CSV-to-HTML conversion plugin.
+5. **Optimize SEO** with metadata for player names, RRI tags, fantasy values.
+
+🔗 Bonus: Connect **Mailchimp** or **ConvertKit** forms on WP to allow subscriber-only access to Top 25 Rankings.
+
+---
+
 ## 📬 Contact / Contribute
 
 Interested in contributing, building fantasy dashboards, or API integrations?
@@ -93,3 +130,4 @@ Interested in contributing, building fantasy dashboards, or API integrations?
 ---
 
 🧪 Powered by Databricks, OpenAI, Python, RowZero, and the ⚾️ community of nerds.
+🌐 Distributed via GitHub, Sheets, Streamlit, and WordPress.org on Hostinger.

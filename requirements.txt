@@ -1,0 +1,13 @@
+pandas
+numpy
+openpyxl
+google-api-python-client
+gspread
+oauth2client
+matplotlib
+seaborn
+sqlalchemy
+mlflow
+xgboost
+streamlit
+scikit-learn

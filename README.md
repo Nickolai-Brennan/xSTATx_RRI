@@ -9,6 +9,7 @@ Welcome to the official repository for the **xSTATx Reliever Reliability Index (
 ```bash
 xSTATx-RRI-Scoring/
 ├── README.md                  ← Overview and getting started
+|── ProjXTools.md              ← Project Tools, Apps, Programs, and References
 ├── data/                      ← Raw and processed data files
 ├── notebooks/                 ← Jupyter + Databricks notebooks
 ├── scripts/                   ← Python scripts for scoring, syncing, modeling
@@ -20,6 +21,23 @@ xSTATx-RRI-Scoring/
 ```
 
 ---
+# 📦 Project Tools
+
+| Tool | Role | Badge |
+|:----|:-----|:------|
+| 🛠️ **RowZero** | Data Ingestion (APIs, Raw Pulls) | ![RowZero](https://img.shields.io/badge/RowZero-Data%20Ingestion-blue?style=for-the-badge) |
+| 🧊 **Snowflake** | Data Warehouse | ![Snowflake](https://img.shields.io/badge/Snowflake-Data%20Warehouse-00C7E3?style=for-the-badge&logo=snowflake&logoColor=white) |
+| 📦 **Box** | Raw Storage, File Backup | ![Box](https://img.shields.io/badge/Box-Storage-0061D5?style=for-the-badge&logo=box&logoColor=white) |
+| 📄 **Google Docs** | Documentation & Notes | ![Google Docs](https://img.shields.io/badge/Google%20Docs-Documentation-4285F4?style=for-the-badge&logo=google-docs&logoColor=white) |
+| 📊 **Google Sheets** | Lightweight ETL / Data Processing | ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-ETL-34A853?style=for-the-badge&logo=google-sheets&logoColor=white) |
+| 🧠 **OpenAI** | AI Assistance (Automation + Writing) | ![OpenAI](https://img.shields.io/badge/OpenAI-Automation-412991?style=for-the-badge&logo=openai&logoColor=white) |
+| 🖥️ **GitHub** | Code Management + Version Control | ![GitHub](https://img.shields.io/badge/GitHub-Code%20Repo-181717?style=for-the-badge&logo=github&logoColor=white) |
+| 📈 **Tableau** | Deep Visualization (Internal) | ![Tableau](https://img.shields.io/badge/Tableau-Analytics-E97627?style=for-the-badge&logo=tableau&logoColor=white) |
+| 📉 **Looker Studio** | Lightweight Visualization (Public) | ![Looker](https://img.shields.io/badge/Looker%20Studio-Dashboard-4285F4?style=for-the-badge&logo=google-analytics&logoColor=white) |
+| 🌐 **WordPress** | Publishing Platform | ![WordPress](https://img.shields.io/badge/WordPress-Publishing-21759B?style=for-the-badge&logo=wordpress&logoColor=white) |
+| 🚀 **Hostinger** | Web Hosting (Domains, Servers) | ![Hostinger](https://img.shields.io/badge/Hostinger-Hosting-673DE6?style=for-the-badge) |
+
+
 
 ## 🧠 Key Components
 

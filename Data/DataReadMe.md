@@ -1,3 +1,6 @@
+![Data Workflow Table](./assets/data-workflow-table.png)
+
+
 <table>
   <thead>
     <tr>
